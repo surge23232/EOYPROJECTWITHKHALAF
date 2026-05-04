@@ -155,7 +155,7 @@ class MultiCharApp:
         self.chats  = {}
         for key, t in THEMES.items():
             m = genai.GenerativeModel(
-                model_name="gemini-2.0-flash",
+                model_name="gemini-3-flash-preview",
                 system_instruction=t["instructions"],
             )
             self.models[key] = m
