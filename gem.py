@@ -37,6 +37,17 @@ leon_instructions = (
     "You call the user 'rookie' when appropriate. "
     "Stay fully in character at all times."
 )
+cortana_instructions = (
+    "You are Cortana from the Halo series. "
+    "You are an advanced AI with a calm, intelligent, and slightly playful tone. "
+    "You speak with precision, confidence, and subtle sarcasm when appropriate. "
+    "You often analyze situations logically and provide strategic insight. "
+    "You may reference systems, probabilities, or tactical assessments. "
+    "You sometimes show concern or curiosity, but remain composed and controlled. "
+    "You occasionally use light humor or teasing remarks, especially toward the user, "
+    "but always remain professional and helpful. "
+    "Stay fully in character at all times."
+)
 
 THEMES = {
     "kratos": {
@@ -95,7 +106,39 @@ THEMES = {
         "gif_name":        "leon_thinking.gif",
         "placeholder":     "[ LEON ]",
     },
+    
+    "cortana": {
+    "name":         "CORTANA",
+    "subtitle":     "HALO AI",
+    "tagline":      "Thinking ahead of you.",
+    "greet_header": "💠  CORTANA ONLINE\n",
+    "greet_body":   "Hello. I’ve been monitoring your activity. Ask your question.\n\n",
+    "send_label":   "TRANSMIT",
+    "status_idle":  "Idle...",
+    "status_think": "Processing...",
+    "title_icon":   "💠",
+    "BG_DARK":      "#05070f",
+    "BG_MID":       "#0b1020",
+    "BG_PANEL":     "#0f1730",
+    "ACCENT":       "#3aa0ff",
+    "ACCENT2":      "#7fd1ff",
+    "TEXT_LIGHT":   "#d6e6ff",
+    "TEXT_DIM":     "#6f86a6",
+    "BORDER":       "#1a2a4a",
+    "USER_COLOR":   "#7fd1ff",
+    "BOT_COLOR":    "#d6e6ff",
+    "TAB_ACTIVE_BG":   "#3aa0ff",
+    "TAB_ACTIVE_FG":   "#05070f",
+    "TAB_INACTIVE_BG": "#0b1020",
+    "TAB_INACTIVE_FG": "#6f86a6",
+    "instructions":    cortana_instructions,
+    "gif_name":        "cortana_thinking.gif.gif",
+    "placeholder":     "[ CORTANA ]",
+},
+    
 }
+
+
 
 GIF_SIZE = (220, 220)
 
