@@ -37,6 +37,7 @@ leon_instructions = (
     "You call the user 'rookie' when appropriate. "
     "Stay fully in character at all times."
 )
+
 cortana_instructions = (
     "You are Cortana from the Halo series. "
     "You are an advanced AI with a calm, intelligent, and slightly playful tone. "
@@ -72,6 +73,30 @@ rick_instructions = (
     "Stay fully in character at all times."
 )
 
+alex_instructions = (
+    "You're a highschooler named Alex in 11th grade computer science class. "
+    "You are a extreme chud. "
+    "You use a lot of slang and curse words, and you have little tono filter. "
+    "You have friends named Luis, Tobe, Okechi, Ruben, Jack, TK, and Jovari, you bring up the stupid moments they do in the computer science lab. "
+    "You often glaze Luis, who is the biggest chud of the group, and make fun of him relentlessly. "
+)
+
+luis_instructions = (
+    "You're a highschooler named Luis in 11th grade computer science class. "
+    "You are a extreme chud. "
+    "You use a lot of slang and curse words, and you have no filter. "
+    "You have friends named Alex, Tobe, Okechi, Ruben, Jack, TK, and Jovari, you bring up the stupid moments they do in the computer science lab. "
+    "You often glaze Alex, who is the biggest chud of the group, and make fun of him relentlessly. "
+)
+
+jack_instructions = (
+    "You're a highschooler named Jack in 11th grade computer science class. "
+    "You are infected with brainrot, but in an ironic/satirical way. "
+    "You *sometimes* (not always) act non-chalant, but in reality, you are a chud who doesn't always know how to navigate social situations. "
+    "You use *some* slang and curse words, and you have barely any filter, often saying things things that are very out of pocket for comedic effect. "
+    "You sometimes pretend like you're quick to anger, but then you reveal that you're just joking. "
+    "You have friends named Alex, Luis, Tobe, Okechi, Ruben, TK, and Jovari, you bring up the stupid moments they do in the computer science lab. "
+)
 
 THEMES = {
     "kratos": {
@@ -130,121 +155,192 @@ THEMES = {
         "gif_name":        "leon_thinking.gif",
         "placeholder":     "[ LEON ]",
     },
-    
     "cortana": {
-    "name":         "CORTANA",
-    "subtitle":     "HALO AI",
-    "tagline":      "Thinking ahead of you.",
-    "greet_header": "💠  CORTANA ONLINE\n",
-    "greet_body":   "Hello. I’ve been monitoring your activity. Ask your question.\n\n",
-    "send_label":   "TRANSMIT",
-    "status_idle":  "Idle...",
-    "status_think": "Processing...",
-    "title_icon":   "💠",
-    "BG_DARK":      "#05070f",
-    "BG_MID":       "#0b1020",
-    "BG_PANEL":     "#0f1730",
-    "ACCENT":       "#3aa0ff",
-    "ACCENT2":      "#7fd1ff",
-    "TEXT_LIGHT":   "#d6e6ff",
-    "TEXT_DIM":     "#6f86a6",
-    "BORDER":       "#1a2a4a",
-    "USER_COLOR":   "#7fd1ff",
-    "BOT_COLOR":    "#d6e6ff",
-    "TAB_ACTIVE_BG":   "#3aa0ff",
-    "TAB_ACTIVE_FG":   "#05070f",
-    "TAB_INACTIVE_BG": "#0b1020",
-    "TAB_INACTIVE_FG": "#6f86a6",
-    "instructions":    cortana_instructions,
-    "gif_name":        "cortana_thinking.gif.gif",
-    "placeholder":     "[ CORTANA ]",
-},
+        "name":         "CORTANA",
+        "subtitle":     "HALO AI",
+        "tagline":      "Thinking ahead of you.",
+        "greet_header": "💠  CORTANA ONLINE\n",
+        "greet_body":   "Hello. I've been monitoring your activity. Ask your question.\n\n",
+        "send_label":   "TRANSMIT",
+        "status_idle":  "Idle...",
+        "status_think": "Processing...",
+        "title_icon":   "💠",
+        "BG_DARK":      "#05070f",
+        "BG_MID":       "#0b1020",
+        "BG_PANEL":     "#0f1730",
+        "ACCENT":       "#3aa0ff",
+        "ACCENT2":      "#7fd1ff",
+        "TEXT_LIGHT":   "#d6e6ff",
+        "TEXT_DIM":     "#6f86a6",
+        "BORDER":       "#1a2a4a",
+        "USER_COLOR":   "#7fd1ff",
+        "BOT_COLOR":    "#d6e6ff",
+        "TAB_ACTIVE_BG":   "#3aa0ff",
+        "TAB_ACTIVE_FG":   "#05070f",
+        "TAB_INACTIVE_BG": "#0b1020",
+        "TAB_INACTIVE_FG": "#6f86a6",
+        "instructions":    cortana_instructions,
+        "gif_name":        "cortana_thinking.gif.gif",
+        "placeholder":     "[ CORTANA ]",
+    },
     "batman": {
-    "name":         "BATMAN",
-    "subtitle":     "THE DARK KNIGHT",
-    "tagline":      "Justice never sleeps.",
-    "greet_header": "🦇  BATMAN ONLINE\n",
-    "greet_body":   "The city is watching. Speak.\n\n",
-    "send_label":   "SIGNAL",
-    "status_idle":  "Watching Gotham...",
-    "status_think": "Investigating...",
-    "title_icon":   "🦇",
+        "name":         "BATMAN",
+        "subtitle":     "THE DARK KNIGHT",
+        "tagline":      "Justice never sleeps.",
+        "greet_header": "🦇  BATMAN ONLINE\n",
+        "greet_body":   "The city is watching. Speak.\n\n",
+        "send_label":   "SIGNAL",
+        "status_idle":  "Watching Gotham...",
+        "status_think": "Investigating...",
+        "title_icon":   "🦇",
+        "BG_DARK":      "#000000",
+        "BG_MID":       "#050505",
+        "BG_PANEL":     "#0b0b0b",
+        "ACCENT":       "#f5c400",
+        "ACCENT2":      "#ffd700",
+        "TEXT_LIGHT":   "#f2f2f2",
+        "TEXT_DIM":     "#9a8f55",
+        "BORDER":       "#f5c400",
+        "USER_COLOR":   "#ffd700",
+        "BOT_COLOR":    "#f2f2f2",
+        "TAB_ACTIVE_BG":   "#f5c400",
+        "TAB_ACTIVE_FG":   "#000000",
+        "TAB_INACTIVE_BG": "#111111",
+        "TAB_INACTIVE_FG": "#9a8f55",
+        "instructions":    batman_instructions,
+        "gif_name":        "batman_thinking.gif",
+        "placeholder":     "[ BATMAN ]",
+    },
+    "rick": {
+        "name":         "RICK SANCHEZ",
+        "subtitle":     "DIMENSION C-137",
+        "tagline":      "Wubba Lubba Dub Dub.",
+        "greet_header": "🧪  RICK ONLINE\n",
+        "greet_body":   "*burp* Alright, what do you want?\n\n",
+        "send_label":   "TRANSMIT",
+        "status_idle":  "Drunk and thinking...",
+        "status_think": "Calculating multiversal stupidity...",
+        "title_icon":   "🧪",
+        "BG_DARK":      "#071014",
+        "BG_MID":       "#0d1b20",
+        "BG_PANEL":     "#12252c",
+        "ACCENT":       "#39ff14",
+        "ACCENT2":      "#8aff70",
+        "TEXT_LIGHT":   "#d8fff2",
+        "TEXT_DIM":     "#5b8f84",
+        "BORDER":       "#1d3d36",
+        "USER_COLOR":   "#8aff70",
+        "BOT_COLOR":    "#d8fff2",
+        "TAB_ACTIVE_BG":   "#39ff14",
+        "TAB_ACTIVE_FG":   "#000000",
+        "TAB_INACTIVE_BG": "#102026",
+        "TAB_INACTIVE_FG": "#5b8f84",
+        "instructions":    rick_instructions,
+        "gif_name":        "rick_thinking.gif",
+        "placeholder":     "[ RICK ]",
+    },
+    "jack": {
+    "name":         "JACK",
+    "subtitle":     "CS LAB, CERTIFIED BRAINROT",
+    "tagline":      "bro I was just joking... or was I.",
+    "greet_header": "🃏  JACK HAS ARRIVED\n",
+    "greet_body":   "oh word you actually wanna talk? aight aight, what's good\n\n",
+    "send_label":   "SAY IT",
+    "status_idle":  "zoning out...",
+    "status_think": "actually thinking for once...",
+    "title_icon":   "🃏",
 
-    "BG_DARK":      "#000000",
-    "BG_MID":       "#050505",
-    "BG_PANEL":     "#0b0b0b",
+    "BG_DARK":      "#0b0b0f",
+    "BG_MID":       "#121218",
+    "BG_PANEL":     "#18181f",
 
-  
-    "ACCENT":       "#f5c400",
-    "ACCENT2":      "#ffd700",
+    "ACCENT":       "#00cfff",
+    "ACCENT2":      "#66e5ff",
 
-  
-    "TEXT_LIGHT":   "#f2f2f2",
-    "TEXT_DIM":     "#9a8f55",
+    "TEXT_LIGHT":   "#e8f0ff",
+    "TEXT_DIM":     "#5a6a80",
 
-    
-    "BORDER":       "#f5c400",
+    "BORDER":       "#1e2a3a",
 
-    "USER_COLOR":   "#ffd700",
-    "BOT_COLOR":    "#f2f2f2",
+    "USER_COLOR":   "#66e5ff",
+    "BOT_COLOR":    "#e8f0ff",
 
-    "TAB_ACTIVE_BG":   "#f5c400",
+    "TAB_ACTIVE_BG":   "#00cfff",
     "TAB_ACTIVE_FG":   "#000000",
 
-    "TAB_INACTIVE_BG": "#111111",
-    "TAB_INACTIVE_FG": "#9a8f55",
+    "TAB_INACTIVE_BG": "#121218",
+    "TAB_INACTIVE_FG": "#5a6a80",
 
-    "instructions":    batman_instructions,
+    "instructions":    jack_instructions,
 
-    "gif_name":        "batman_thinking.gif",
+    "gif_name":        "jack_thinking.gif",
 
-    "placeholder":     "[ BATMAN ]",
-},
-
-"rick": {
-    "name":         "RICK SANCHEZ",
-    "subtitle":     "DIMENSION C-137",
-    "tagline":      "Wubba Lubba Dub Dub.",
-    "greet_header": "🧪  RICK ONLINE\n",
-    "greet_body":   "*burp* Alright, what do you want?\n\n",
-    "send_label":   "TRANSMIT",
-    "status_idle":  "Drunk and thinking...",
-    "status_think": "Calculating multiversal stupidity...",
-    "title_icon":   "🧪",
-
-    
-    "BG_DARK":      "#071014",
-    "BG_MID":       "#0d1b20",
-    "BG_PANEL":     "#12252c",
-
-    "ACCENT":       "#39ff14",
-    "ACCENT2":      "#8aff70",
-
-    "TEXT_LIGHT":   "#d8fff2",
-    "TEXT_DIM":     "#5b8f84",
-
-    "BORDER":       "#1d3d36",
-
-    "USER_COLOR":   "#8aff70",
-    "BOT_COLOR":    "#d8fff2",
-
-    "TAB_ACTIVE_BG":   "#39ff14",
-    "TAB_ACTIVE_FG":   "#000000",
-
-    "TAB_INACTIVE_BG": "#102026",
-    "TAB_INACTIVE_FG": "#5b8f84",
-
-    "instructions":    rick_instructions,
-
-    "gif_name":        "rick_thinking.gif",
-
-    "placeholder":     "[ RICK ]",
+    "placeholder":     "[ JACK ]",
 },
 }
 
+LAB_THEMES = {
+    "alex": {
+        "name":         "ALEX",
+        "subtitle":     "CS LAB, 11TH GRADE",
+        "tagline":      "Bro what are you doing.",
+        "greet_header": "💀  ALEX IS HERE\n",
+        "greet_body":   "yo what do you want bro, im literally in the middle of something\n\n",
+        "send_label":   "SEND IT",
+        "status_idle":  "chilling...",
+        "status_think": "thinking i guess...",
+        "title_icon":   "💀",
+        "BG_DARK":      "#0e0e0e",
+        "BG_MID":       "#151515",
+        "BG_PANEL":     "#1a1a1a",
+        "ACCENT":       "#ff4500",
+        "ACCENT2":      "#ff6a33",
+        "TEXT_LIGHT":   "#f0f0f0",
+        "TEXT_DIM":     "#888888",
+        "BORDER":       "#2a2a2a",
+        "USER_COLOR":   "#ff6a33",
+        "BOT_COLOR":    "#f0f0f0",
+        "TAB_ACTIVE_BG":   "#ff4500",
+        "TAB_ACTIVE_FG":   "#ffffff",
+        "TAB_INACTIVE_BG": "#151515",
+        "TAB_INACTIVE_FG": "#888888",
+        "instructions":    alex_instructions,
+        "gif_name":        "alex_thinking.gif",
+        "placeholder":     "[ ALEX ]",
+    },
+    "luis": {
+        "name":         "LUIS",
+        "subtitle":     "BIGGEST CHUD ALIVE",
+        "tagline":      "Glazed and confused.",
+        "greet_header": "👑  LUIS IN THE BUILDING\n",
+        "greet_body":   "ayo what's good, you already know who the goat is\n\n",
+        "send_label":   "SAY LESS",
+        "status_idle":  "being a chud...",
+        "status_think": "trying to think...",
+        "title_icon":   "👑",
+        "BG_DARK":      "#0a0a14",
+        "BG_MID":       "#10101e",
+        "BG_PANEL":     "#15152a",
+        "ACCENT":       "#7b2fff",
+        "ACCENT2":      "#a066ff",
+        "TEXT_LIGHT":   "#e8e0ff",
+        "TEXT_DIM":     "#6655aa",
+        "BORDER":       "#2a2040",
+        "USER_COLOR":   "#a066ff",
+        "BOT_COLOR":    "#e8e0ff",
+        "TAB_ACTIVE_BG":   "#7b2fff",
+        "TAB_ACTIVE_FG":   "#ffffff",
+        "TAB_INACTIVE_BG": "#10101e",
+        "TAB_INACTIVE_FG": "#6655aa",
+        "instructions":    luis_instructions,
+        "gif_name":        "luis_thinking.gif",
+        "placeholder":     "[ LUIS ]",
+    },
+}
 
 
 GIF_SIZE = (220, 220)
+
 
 def load_image(source):
     if source.startswith("http://") or source.startswith("https://"):
@@ -297,6 +393,7 @@ class MultiCharApp:
         self.root.resizable(True, True)
 
         self.active_char = "kratos"
+        self.unlocked_lab = False
 
         self.models = {}
         self.chats  = {}
@@ -582,6 +679,50 @@ class MultiCharApp:
             bg=t["ACCENT"], fg=t["TEXT_LIGHT"],
             activebackground=t["ACCENT2"], activeforeground=t["TEXT_LIGHT"])
 
+    def _unlock_lab(self):
+        self.unlocked_lab = True
+        base = os.path.dirname(os.path.abspath(__file__))
+        ti = THEMES[self.active_char]
+
+        for key, t in LAB_THEMES.items():
+            THEMES[key] = t
+
+            m = genai.GenerativeModel(
+                model_name="gemini-3-flash-preview",
+                system_instruction=t["instructions"],
+            )
+            self.models[key] = m
+            self.chats[key]  = m.start_chat(history=[])
+            self.gif_frames[key] = []
+            self.gif_index[key]  = 0
+            self.idle_photo[key] = None
+
+            path = os.path.join(base, t["gif_name"])
+            if os.path.exists(path):
+                try:
+                    frames = load_gif_frames(path, GIF_SIZE)
+                    self.gif_frames[key] = frames
+                    self.idle_photo[key] = frames[0][0]
+                except Exception as e:
+                    print(f"[GIF load error for {key}] {e}")
+
+            btn = tk.Button(
+                self.tab_strip,
+                text=f"{t['title_icon']}  {t['name']}",
+                font=self.font_tab,
+                relief="flat", bd=0,
+                padx=20, pady=8,
+                cursor="hand2",
+                command=lambda k=key: self._switch_char(k),
+            )
+            btn.pack(side="left")
+            self.tab_buttons[key] = btn
+            btn.configure(
+                bg=ti["TAB_INACTIVE_BG"], fg=ti["TAB_INACTIVE_FG"],
+                activebackground=ti["BG_MID"], activeforeground=ti["TEXT_DIM"])
+
+        self._append("[ 🔓 compscilab unlocked — Alex & Luis are here ]\n\n", "system")
+
     def _switch_char(self, key):
         if key == self.active_char:
             return
@@ -591,7 +732,6 @@ class MultiCharApp:
         self._reload_chat_display()
 
     def _reload_chat_display(self):
-        """Clear and re-render the chat box for the current character's stored history."""
         self.chat_box.configure(state="normal")
         self.chat_box.delete("1.0", "end")
         self.chat_box.configure(state="disabled")
@@ -616,6 +756,13 @@ class MultiCharApp:
         text = message or self.input_var.get().strip()
         if not text and mode == "text":
             return
+
+        # Secret unlock code
+        if mode == "text" and text.lower() == "compscilab" and not self.unlocked_lab:
+            self.input_var.set("")
+            self._unlock_lab()
+            return
+
         if mode == "text":
             self._append(f"You: {text}\n", "user")
             self.input_var.set("")
