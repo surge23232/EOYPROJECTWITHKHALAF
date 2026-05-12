@@ -242,9 +242,9 @@ THEMES = {
     "jack": {
     "name":         "JACK",
     "subtitle":     "CS LAB, CERTIFIED BRAINROT",
-    "tagline":      "bro I was just joking... or was I.",
+    "tagline":      "I can't stop farting",
     "greet_header": "🃏  JACK HAS ARRIVED\n",
-    "greet_body":   "oh word you actually wanna talk? aight aight, what's good\n\n",
+    "greet_body":   "Erm...m-my name is Jack. W-whats your name?\n\n",
     "send_label":   "SAY IT",
     "status_idle":  "zoning out...",
     "status_think": "actually thinking for once...",
